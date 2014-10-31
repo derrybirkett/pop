@@ -2,10 +2,13 @@ head
   title pop
 
 body
-  h1 Welcome to Meteor!
+  +login
+  +profile
 
-  +hello
+template(name="login")
+  +loginButtons
 
-template(name="hello")
-  button Click Me
-  p You've pressed the button {{counter}} times.
+template(name="profile")
+  h1 Profile
+  p Welcome #{user.services.twitter.screenName}
+  img(src="#{user.services.twitter.profile_image_url}")
