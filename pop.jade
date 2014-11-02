@@ -2,13 +2,13 @@ head
   title pop
 
 body
-  +login
-  +profile
+  .account
+    +account
 
-template(name="login")
+template(name="account")
+  +usercardMini
   +loginButtons
 
-template(name="profile")
-  h1 Profile
-  p Welcome #{user.services.twitter.screenName}
-  img(src="#{user.services.twitter.profile_image_url}")
+template(name="usercardMini")
+  .avatar 
+    img(src="#{user.services.twitter.profile_image_url}")  

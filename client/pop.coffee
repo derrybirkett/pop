@@ -1,3 +1,3 @@
-Template.profile.helpers
+Template.usercardMini.helpers
   user: ->
-      Meteor.users.findOne(Meteor.userId())
+    Meteor.users.findOne(Meteor.userId())
