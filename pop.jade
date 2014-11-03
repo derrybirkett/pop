@@ -5,10 +5,8 @@ body
   .account
     +account
 
+  +basicProfile
+    
 template(name="account")
-  +usercardMini
   +loginButtons
 
-template(name="usercardMini")
-  .avatar 
-    img(src="#{user.services.twitter.profile_image_url}")  
