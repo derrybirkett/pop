@@ -1,12 +1,14 @@
 head
   title pop
 
-body
-  .account
-    +account
-
-  +profile
-  +dribbbleShots
-    
+body  
+  if currentUser
+      .account
+        +account
+      +profile
+      +dribbbleShots
+  else
+    +welcome
+      
 template(name="account")
   +loginButtons

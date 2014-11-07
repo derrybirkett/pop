@@ -1,3 +1,3 @@
 Template.profile.helpers
-    user: ->
-        Meteor.users.findOne(Meteor.userId())
+  user: ->
+    Meteor.users.findOne(Meteor.userId())
