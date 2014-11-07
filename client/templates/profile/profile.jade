@@ -1,0 +1,7 @@
+template(name="profile")
+    .profile.basic
+        img(src="#{user.services.twitter.profile_image_url}" class="avatar")  
+        h1 #{user.profile.name}
+        h5 @#{user.services.twitter.screenName}
+        button Follow
+        
