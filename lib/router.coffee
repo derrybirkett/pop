@@ -10,4 +10,10 @@ Router.route '/',
 Router.route '/directory',
   name: 'directory'
   data: ->
-    Meteor.users.find()
+    user: ->
+        Meteor.users.find()
+
+Router.route '/profile/:_id',
+    name: 'profile',
+    data: ->
+        Meteor.users.findOne(this.params._id)

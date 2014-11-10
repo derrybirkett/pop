@@ -1,0 +1,9 @@
+template(name="usercard")
+    .usercard.basic
+        img(src="#{services.twitter.profile_image_url}" class="avatar")  
+        h1 
+            a(href="{{pathFor 'profile'}}")
+                | #{profile.name}
+        h5 @#{services.twitter.screenName}
+        button Follow
+        
