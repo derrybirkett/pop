@@ -1,2 +1,2 @@
-Meteor.publish 'users': ->
+Meteor.publish 'users', ->
   Meteor.users.find()
