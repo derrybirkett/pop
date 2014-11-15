@@ -6,6 +6,8 @@ Router.configure
 
 Router.route '/',
   name:'home'
+  onBeforeAction: ->
+    if Meteor.user() then Router.go 'profile', {_id: Meteor.userId()}
 
 Router.route '/directory',
   name: 'directory'
