@@ -5,9 +5,12 @@ Router.configure
         Meteor.subscribe('users')
 
 Router.route '/',
-  name:'home'
+  name: 'home'
   onBeforeAction: ->
-    if Meteor.user() then Router.go 'profile', {_id: Meteor.userId()}
+    if Meteor.user()
+      Router.go 'profile', {_id: Meteor.userId()}
+    else
+      this.next()
 
 Router.route '/directory',
   name: 'directory'
