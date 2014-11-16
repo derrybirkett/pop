@@ -8,12 +8,26 @@ outline()
     border 2px solid
     background transparent
 
-inverse()
+chiaro()
     background white
+    border-color white
     color gray-dark
+    a
+      color gray-dark
 
+/* Dark Background */
 scuro()
     background-color primarybg
     color white
+    border-color gray-dark
     a
       color white
+    button
+      &:hover
+        chiaro()
+
+.centered
+  text-align center
+
+.inactive
+  opacity 0.2

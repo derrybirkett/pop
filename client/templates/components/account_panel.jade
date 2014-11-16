@@ -1,2 +1,13 @@
 template(name="accountPanel")
+  a(href="#") close
   h1 Account Panel
+  section.dribbble.integration
+    h2 Dribbble
+    form#dribbble
+      .form-group
+        label Dribbble Username
+        input(type="text" name="dribbbleUsername" value="#{account.dribbble.username}" placeholder="dribbble username").form-control
+
+      .form-group
+        button(type="submit" value="Save").button
+          | Save
