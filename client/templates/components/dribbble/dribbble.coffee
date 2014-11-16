@@ -3,8 +3,11 @@ Template.dribbble.events
     e.preventDefault()
 
     accountUpdates =
-      dribbble: $(e.target).find('[username=username]').val()
+      dribbble:
+        username: $(e.target).find('[name=username]').val()
 
     Meteor.call 'updateAccount', accountUpdates, (error,id) ->
       if error
-        console.log('error')
+        console.log(error)
+      else
+        console.log(id)
