@@ -1,7 +1,4 @@
-if dribbbleActive = Meteor.users.findOne({ _id: Meteor.userId() }, {'account.dribbble.username':{$exists:true}})
-
-
-  console.log(dribbbleActive);
+if Session.get('dribbbler')
 
   Shots = new Meteor.Collection(null)
 

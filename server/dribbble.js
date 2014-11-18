@@ -11,10 +11,13 @@ var dribbbleAPI = {
 Meteor.methods({
 
   loadDribbbleShots: function() {
-    this.unblock();
-    return Meteor.http.call('GET', 'https://api.dribbble.com/v1/users/derrybirkett/shots', {
-      headers: { 'Authorization': 'Bearer ' + dribbbleAPI.config.accessToken }
-    });
+    var dribbbler = Meteor.user();
+    if (dribbbler.account.dribbble.username) {
+      this.unblock();
+      return Meteor.http.call('GET', 'https://api.dribbble.com/v1/users/' + dribbbler.account.dribbble.username + '/shots', {
+        headers: { 'Authorization': 'Bearer ' + dribbbleAPI.config.accessToken }
+      });
+    }
   }
 
 });

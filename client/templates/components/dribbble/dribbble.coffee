@@ -10,4 +10,9 @@ Template.dribbble.events
       if error
         console.log(error)
       else
-        console.log(id)
+        Session.set('dribbbler', accountUpdates.dribbble.username)
+        console.log(Session.get('dribbbler'))
+
+Template.dribbble.helpers
+  dribbbler: ->
+    Session.get('dribbbler')
