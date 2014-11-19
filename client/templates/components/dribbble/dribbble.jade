@@ -1,7 +1,8 @@
 template(name="dribbble")
-  if dribbbler
+  if account.dribbble.username
     +dribbbleShots
   else
-    .dribbble
-      form
-        input(type="text", name="username", placeholder="Add your Dribbble username").form-control.input-lg
+    if currentUser
+      .dribbble
+        form
+          input(type="text", name="username", placeholder="Add your Dribbble username").form-control.input-lg

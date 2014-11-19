@@ -12,7 +12,3 @@ Template.dribbble.events
       else
         Session.set('dribbbler', accountUpdates.dribbble.username)
         console.log(Session.get('dribbbler'))
-
-Template.dribbble.helpers
-  dribbbler: ->
-    Session.get('dribbbler')
