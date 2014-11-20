@@ -6,8 +6,8 @@ dribbbleAPI = config:
 
 
 # Dribbble meteor methods
-Meteor.methods loadDribbbleShots: ->
+Meteor.methods loadDribbbleShots: (dribbbler) ->
   @unblock()
-  Meteor.http.call "GET", "https://api.dribbble.com/v1/users/derrybirkett/shots",
+  Meteor.http.call "GET", "https://api.dribbble.com/v1/users/" + dribbbler + "/shots",
     headers:
       Authorization: "Bearer " + dribbbleAPI.config.accessToken
