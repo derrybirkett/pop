@@ -7,8 +7,5 @@ template(name="usercard")
           | #{profile.name}
       h5 @#{services.twitter.screenName}
 
-      if currentUser
-        +loginButtons          
-      else 
-        button.btn 
-          a(href="http://twitter.com/#{services.twitter.screenName}") Follow
+      button.btn.btn-default
+        a(href="http://twitter.com/#{services.twitter.screenName}") Follow

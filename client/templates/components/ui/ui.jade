@@ -1,0 +1,47 @@
+template(name="ui")
+  #ui.ui
+    h1 Welcome
+    p This is just a demo, not much works at the moment - but maybe you can just close your eyes and imagine?
+    +loginButtons
+
+    section.divider.mailchimp
+      h4 Newsletter
+      p When this baby is ready to start crying, I'll ping you.
+      +MailChimpListSubscribe
+      
+    if currentUser  
+      form
+        section.divider
+          h4 Your Account
+          p This is all dummy content. Sorry.
+          .form-group
+            label Username
+            input.form-control(type="text",placeholder="Username")
+          .form-group
+            label Email
+            input.form-control(type="text",placeholder="Email")              
+          button.btn.btn-default Submit
+              
+        section.divider
+          h4 Evernote
+          p Take it from me, you are great
+          .form-group
+            button.btn.btn-success 
+              a(href="#")
+                span.glyphicon.glyphicon-ok 
+                | Evernote
+            button.btn.btn-link
+              a(href="#")
+                span.glyphicon.glyphicon-off 
+                  
+        section.divider
+          h4 Dribbble
+          p Take it from me, you are great
+          .form-group
+            button.btn.btn-info 
+              a(href="#")
+                span.glyphicon.glyphicon-flash
+                | Connect Dribbble
+
+      
+    +uitabs

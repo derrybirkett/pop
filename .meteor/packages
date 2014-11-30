@@ -14,3 +14,5 @@ nemo64:bootstrap
 less
 iron:router
 sacha:spin
+miro:mailchimp
+

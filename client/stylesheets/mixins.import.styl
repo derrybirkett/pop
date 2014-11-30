@@ -5,8 +5,12 @@
 */
 
 outline()
-    border 2px solid
-    background transparent
+  border 2px solid
+  background transparent
+
+chiaro()
+  background-color #fff
+  color #333
 
 scuro()
   background-color #333
@@ -17,3 +21,12 @@ scuro()
 
 .inactive
   opacity 0.2
+
+btn()
+  background-color transparent
+  border 2px solid white
+  padding 1em
+  border-radius 50px
+  font-weight 600
+  &.inverse
+    chiaro()

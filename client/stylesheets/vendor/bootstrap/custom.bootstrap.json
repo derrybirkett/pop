@@ -30,10 +30,10 @@
   "wells":                false,
   "close":                false,
 
-  "component-animations": false,
+  "component-animations": true,
   "dropdowns":            false,
   "modals":               false,
-  "tooltip":              false,
+  "tooltip":              true,
   "popovers":             false,
   "carousel":             false,
 
