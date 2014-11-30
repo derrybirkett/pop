@@ -4,23 +4,38 @@ template(name="ui")
     p Here you can alter your own mind with substances that are not legal
     
     form
-      .form-group
-        label Username
-        input.form-control(type="text",placeholder="Username")
-      .form-group
-        label Email
-        input.form-control(type="text",placeholder="Email")
-      button.btn.btn-default Submit
+      section.divider
+        h4 Your Account
+        p Take it from me, you are great
+        .form-group
+          label Username
+          input.form-control(type="text",placeholder="Username")
+        .form-group
+          label Email
+          input.form-control(type="text",placeholder="Email")
+
+      section.divider
+        h4 Evernote
+        p Take it from me, you are great
+        .form-group
+          button.btn.btn-success Connect Evernote
+            
+    
+      section.divider
+        h4 Dribbble
+        p Take it from me, you are great
+        .form-group
+          label Username
+          input.form-control(type="text",placeholder="Username")
+
+      section.divider                      
+        button.btn.btn-default Submit
     
     .tabs
       button.btn.btn-link
         a(href="#")
           span.glyphicon.glyphicon-align-justify    
       
-      button.btn.btn-default
-        a(href="#")
-          span.glyphicon.glyphicon-cog
-
       button.btn.btn-default
         a(href="#")
           span.glyphicon.glyphicon-search
