@@ -1,21 +1,23 @@
 template(name="ui")
-  .ui
-    button.btn.btn-default
-      a(href="#")
-        span.glyphicon.glyphicon-chevron-right    
-    
-    button.btn.btn-default
-      a(href="#")
-        span.glyphicon.glyphicon-cog
+  #ui.ui.usher
+    h1 Settings
+    .tabs
+      button.btn.btn-link
+        a(href="#")
+          span.glyphicon.glyphicon-align-justify    
+      
+      button.btn.btn-default
+        a(href="#")
+          span.glyphicon.glyphicon-cog
 
-    button.btn.btn-default
-      a(href="#")
-        span.glyphicon.glyphicon-search
+      button.btn.btn-default
+        a(href="#")
+          span.glyphicon.glyphicon-search
 
-    button.btn.btn-default
-      a(href="#")
-        span.glyphicon.glyphicon-user
+      button.btn.btn-default
+        a(href="{{pathFor 'directory'}}")
+          span.glyphicon.glyphicon-user
 
-    button.btn.btn-default
-      a(href="#")
-        span.glyphicon.glyphicon-off
+      button.btn.btn-default
+        a(href="#")
+          span.glyphicon.glyphicon-off
