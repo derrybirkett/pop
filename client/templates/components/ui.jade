@@ -1,6 +1,17 @@
 template(name="ui")
   #ui.ui.usher
     h1 Settings
+    p Here you can alter your own mind with substances that are not legal
+    
+    form
+      .form-group
+        label Username
+        input.form-control(type="text",placeholder="Username")
+      .form-group
+        label Email
+        input.form-control(type="text",placeholder="Email")
+      button.btn.btn-default Submit
+    
     .tabs
       button.btn.btn-link
         a(href="#")
