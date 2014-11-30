@@ -1,8 +1,0 @@
-template(name="dribbble")
-  if account.dribbble.username
-    +dribbbleShots
-    +dribbbleConfig
-  else
-    if currentUser
-        form
-          input(type="text", name="username", placeholder="Add your Dribbble username").form-control.input-lg
