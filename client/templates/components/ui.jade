@@ -1,9 +1,12 @@
 template(name="ui")
-  #ui.ui.usher
+  #ui.ui
     h1 Settings
     p Here you can alter your own mind with substances that are not legal
     
     form
+      section.divider
+        +loginButtons
+      
       section.divider
         h4 Your Account
         p Take it from me, you are great
@@ -18,21 +21,30 @@ template(name="ui")
         h4 Evernote
         p Take it from me, you are great
         .form-group
-          button.btn.btn-success Connect Evernote
+          button.btn.btn-success 
+            a(href="#")
+              span.glyphicon.glyphicon-ok 
+              | Evernote
+          button.btn.btn-link
+            a(href="#")
+              span.glyphicon.glyphicon-off 
+                
             
     
       section.divider
         h4 Dribbble
         p Take it from me, you are great
         .form-group
-          label Username
-          input.form-control(type="text",placeholder="Username")
+          button.btn.btn-info 
+            a(href="#")
+              span.glyphicon.glyphicon-flash
+              | Connect Dribbble
 
       section.divider                      
         button.btn.btn-default Submit
     
     .tabs
-      button.btn.btn-link
+      button.btn.btn-link.usher
         a(href="#")
           span.glyphicon.glyphicon-align-justify    
       
