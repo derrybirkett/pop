@@ -1,7 +1,8 @@
 template(name="usercard")
   .usercard(style="background-image:url('#{services.twitter.profile_image_url}');")
     .basic
-      img(src="#{services.twitter.profile_image_url}" class="avatar")  
+      a(href="{{pathFor 'profile'}}")
+        img(src="#{services.twitter.profile_image_url}" class="avatar")  
       h1 
         a(href="{{pathFor 'profile'}}")
           | #{profile.name}
