@@ -11,7 +11,7 @@ template(name="ui")
       
     if currentUser  
       form
-        section.divider
+        section.divider.hidden
           h4 Your Account
           p This is all dummy content. Sorry.
           .form-group
@@ -22,7 +22,7 @@ template(name="ui")
             input.form-control(type="text",placeholder="Email")              
           button.btn.btn-default Submit
               
-        section.divider
+        section.divider.hidden
           h4 Evernote
           p Take it from me, you are great
           .form-group
@@ -34,7 +34,7 @@ template(name="ui")
               a(href="#")
                 span.glyphicon.glyphicon-off 
                   
-        section.divider
+        section.divider.hidden
           h4 Dribbble
           p Take it from me, you are great
           .form-group
