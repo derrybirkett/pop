@@ -1,0 +1,8 @@
+template(name="badge")
+  .usercard.badge
+    img(src="#{services.twitter.profile_image_url}" class="avatar")
+    .details
+      h1
+        a(href="{{pathFor 'profile'}}")
+          | #{profile.name}
+      h5 @#{services.twitter.screenName}

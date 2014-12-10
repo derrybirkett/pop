@@ -12,6 +12,12 @@ chiaro()
   background-color #fff
   color #333
 
+primary()
+  background-color primary
+  color white
+  &:hover
+    background-color lightness(primary, 80%)
+
 scuro()
   background-color secondary
   color white
@@ -23,10 +29,9 @@ scuro()
   opacity 0.2
 
 btn()
-  background-color transparent
   border 2px solid white
   padding 1em
-  border-radius 50px
+  border-radius 6px
   font-weight 600
   &.inverse
     chiaro()
